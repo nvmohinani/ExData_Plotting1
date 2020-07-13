@@ -21,7 +21,7 @@ plot(dataset$dateTime, dataset$Voltage, type="l", ylab = "Voltage (volt)", xlab 
 plot(dataset$dateTime, dataset$Sub_metering_1, type="l", ylab = "Global Active Power(kilowatts)", xlab = "")    
 lines(dataset$dateTime, dataset$Sub_metering_2, col = "red", type = "l")
 lines(dataset$dateTime, dataset$Sub_metering_3, col = "blue", type = "l")
-legend("topright", col=c("black", "red", "blue"), lty = 1, lwd = 2, bty = "n", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", col=c("black", "red", "blue"), lwd = c(1, 1, 1), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = c(0.5, 0.5, 0.5))
 
 plot(dataset$dateTime, dataset$Global_reactive_power, type="l", ylab = "Global Reactive Power (kilowatts)", xlab = "")
 
